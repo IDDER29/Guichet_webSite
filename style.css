@@ -42,7 +42,7 @@ body {
 nav {
   justify-content: space-between;
   width: 100%;
-  border: 1px blue solid;
+  
 }
 
 header {
@@ -133,6 +133,9 @@ header {
 
 header .hero_content {
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -219,7 +222,7 @@ main section .cart .icon {
 }
 
 main section .cart .show_poster {
-  width: 307px;
+  width: 266px;
   border-radius: 15px;
   display: flex;
   flex-shrink: 0;
@@ -371,7 +374,7 @@ footer .footer_section .first_part #mini_logo {
 footer .footer_section .first_part .countres_section {
 
   flex: 1;
-  gap: 0.4rem;
+  gap: 1rem;
 }
 
 
@@ -383,6 +386,7 @@ footer .footer_section .first_part .country_input {
   border-radius: 5px;
   align-items: center;
   padding: 0.5em 1em;
+  
 }
 
 footer .footer_section .first_part .country_input select {
@@ -397,6 +401,7 @@ footer .footer_section .first_part .country_input select {
   font-weight: bold;
   display: flex;
   align-items: center;
+
 }
 
 footer .footer_section .first_part #flag {
@@ -429,9 +434,12 @@ footer .copyright_section {
 .gird {
   display: grid;
   grid-template-columns: repeat(2, minmax(622px, 740px));
-  gap: 10px;
+  row-gap: 36px;
   justify-content: center;
+  column-gap: 32px;
+  padding-top: 4em;
 }
+
 
 footer ul {
   display: flex;
@@ -454,7 +462,7 @@ footer .list_nav_section {
 
 }
 
-footer .footer_info_section {}
+
 
 footer .footer_info_section .form {
   border: #071b3678 solid 1px;
@@ -507,4 +515,37 @@ footer .second_part {
 
 footer .second_part h2 {
   color: #161616;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.more_info {
+  gap: 2em;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding-bottom: 8em;
+  width: 80%;
+}
+
+.more_info div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  flex: 1;
+}
+
+.more_info div p{
+  width: 360px;
+  text-align: center;
+}
+
+.more_info .icon{
+  height: 60px;
+}
+
+#social_media{
+  gap: 1em;
 }
