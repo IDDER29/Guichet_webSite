@@ -1,71 +1,762 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,900;1,900&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
     <title>Guichet</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <nav>
-      <div id="first_nav">
-        <div>
-          <img src="./img/logo.png" alt="Guichet_logo" />
-        </div>
-        <div>
-          <div>
-            <div>
-              <img src="./img/mini logo.png" alt="" />
+        <div id="first_nav" class="flex-row">
+
+            <div id="Logo">
+                <img src="./img/logo.png" alt="Guichet_logo" />
             </div>
-            <span>Guichet Magazine</span>
-          </div>
 
-          <div>
-            <div>
-              <img src="./img/help_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+            <div id="f_nav_links" class="flex-row">
+                <div class="nav_link_box flex-column"">
+                    <div class=" icon">
+                    <img src="./img/mini logo.png" alt="" />
+                </div>
+                <span>Guichet Magazine</span>
             </div>
-            <span>Qui sommes-nous ?</span>
-          </div>
 
-          <a href="#" class="button">
-            <img src="./img/solar_cart-4-outline.png" alt="Panier icon" />
-            <span>Panier</span>
-          </a>
+            <div class="nav_link_box flex-column">
+                <div class="icon">
+                    <img src="./img/help_FILL0_wght400_GRAD0_opsz24.svg" alt="" />
+                </div>
+                <span>Qui sommes-nous ?</span>
+            </div>
+
+            <a href="#" class="button flex-row">
+                <div class="icon">
+                    <img src="./img/bag-shopping-solid.svg" alt="">
+                </div>
+                <span>Panier</span>
+            </a>
         </div>
-      </div>
+        </div>
+        <hr>
 
-      <div id="second_nav">
-        <ul>
-          <li>Accueil</li>
-          <li>Concerts & Festivals</li>
-          <li>Theatre & Humour</li>
-          <li>Formations</li>
-          <li>Salons et congres</li>
-          <li>Famille & Loisirs</li>
-          <li>Sport</li>
-          <li>Cinema</li>
-          <li>Voyage</li>
-          <li><a class="button" href="#">Guichet Store</a></li>
-        </ul>
-      </div>
+        <div id="second_nav">
+            <ul class="flex-row">
+                <li id="active_section">Accueil</li>
+                <li>Concerts & Festivals</li>
+                <li>Theatre & Humour</li>
+                <li>Formations</li>
+                <li>Salons et congres</li>
+                <li>Famille & Loisirs</li>
+                <li>Sport</li>
+                <li>Cinema</li>
+                <li>Voyage</li>
+                <li><a class="button" href="#">Guichet Store</a></li>
+            </ul>
+        </div>
     </nav>
     <header>
-      <div>
-        <img src="./img/SimoLife_With_risani.png" alt="">
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+        <div class="hero_content">
+            <div class="main_img">
+                <img src="./img/SimoLife_With_risani.png" alt="">
+            </div>
+
+        </div>
+        <div id="slider_dotes" class="flex-row">
+            <div class="active_dote"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </header>
-  </body>
+
+
+    <main>
+        <div class="menu_section flex-row">
+            <hr>
+           <div class="icon">
+            <img src="./img/fore_items_grid.svg" alt="grid_with_fore">
+           </div>
+           <div class="icon" id="active_grid">
+            <img src="./img/two_items_grid.svg" alt="grid_with_two">
+           </div>
+        </div>
+
+        <br>
+        <section class="gird">
+            <div class="cart flex-row">
+                <div class="show_poster">
+                    <img src="./img/background_img_aita 2.png" alt="">
+                </div>
+                <div class="cart_deties flex-row">
+                    <div class="cart_info flex-column">
+                        <div class="type">
+                            <h3>Teatre & Humour</h3>
+                        </div>
+                        <div class="title">
+                            <h1>Hassan El Fad "Who Is kabour"</h1>
+                        </div>
+                        <div class="timer">
+                            <span class="icon"><img src="./img/hourglass.svg" alt=""></span>
+                            <span class="num_time">00</span>
+                            <span class="letter_time">j</span>
+                            <span class="num_time">02</span>
+                            <span class="letter_time">h</span>
+                            <span class="num_time">31</span>
+                            <span class="letter_time">m</span>
+                            <span class="num_time">30</span>
+                            <span>s</span>
+                        </div>
+                        <div class="adresse">
+                            <span class="icon">
+                                <img src="./img/location1.svg" alt="">
+                            </span>
+                            <span class="bold">Casablanca,</span>
+                            <samp>Megarama</samp>
+                        </div>
+                    </div>
+
+                    <div class="buy flex-column">
+                        <div class="price">
+                            <div>
+                                A partir de :
+                            </div>
+                            <div class="price_num flex-row">
+                                <div class="num">200</div>
+                                <div class="currency">DH</div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a href="#">J'achete</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cart flex-row">
+                <div class="show_poster">
+                    <img src="./img/background_img_aita 2.png" alt="">
+                </div>
+                <div class="cart_deties flex-row">
+                    <div class="cart_info flex-column">
+                        <div class="type">
+                            <h3>Teatre & Humour</h3>
+                        </div>
+                        <div class="title">
+                            <h1>Hassan El Fad "Who Is kabour"</h1>
+                        </div>
+                        <div class="timer">
+                            <span class="icon"><img src="./img/hourglass.svg" alt=""></span>
+                            <span class="num_time">00</span>
+                            <span class="letter_time">j</span>
+                            <span class="num_time">02</span>
+                            <span class="letter_time">h</span>
+                            <span class="num_time">31</span>
+                            <span class="letter_time">m</span>
+                            <span class="num_time">30</span>
+                            <span>s</span>
+                        </div>
+                        <div class="adresse">
+                            <span class="icon">
+                                <img src="./img/location1.svg" alt="">
+                            </span>
+                            <span class="bold">Casablanca,</span>
+                            <samp>Megarama</samp>
+                        </div>
+                    </div>
+
+                    <div class="buy flex-column">
+                        <div class="price">
+                            <div>
+                                A partir de :
+                            </div>
+                            <div class="price_num flex-row">
+                                <div class="num">200</div>
+                                <div class="currency">DH</div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a href="#">J'achete</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="cart flex-row">
+                <div class="show_poster">
+                    <img src="./img/background_img_aita 2.png" alt="">
+                </div>
+                <div class="cart_deties flex-row">
+                    <div class="cart_info flex-column">
+                        <div class="type">
+                            <h3>Teatre & Humour</h3>
+                        </div>
+                        <div class="title">
+                            <h1>Hassan El Fad "Who Is kabour"</h1>
+                        </div>
+                        <div class="timer">
+                            <span class="icon"><img src="./img/hourglass.svg" alt=""></span>
+                            <span class="num_time">00</span>
+                            <span class="letter_time">j</span>
+                            <span class="num_time">02</span>
+                            <span class="letter_time">h</span>
+                            <span class="num_time">31</span>
+                            <span class="letter_time">m</span>
+                            <span class="num_time">30</span>
+                            <span>s</span>
+                        </div>
+                        <div class="adresse">
+                            <span class="icon">
+                                <img src="./img/location1.svg" alt="">
+                            </span>
+                            <span class="bold">Casablanca,</span>
+                            <samp>Megarama</samp>
+                        </div>
+                    </div>
+
+                    <div class="buy flex-column">
+                        <div class="price">
+                            <div>
+                                A partir de :
+                            </div>
+                            <div class="price_num flex-row">
+                                <div class="num">200</div>
+                                <div class="currency">DH</div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a href="#">J'achete</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cart flex-row">
+                <div class="show_poster">
+                    <img src="./img/background_img_aita 2.png" alt="">
+                </div>
+                <div class="cart_deties flex-row">
+                    <div class="cart_info flex-column">
+                        <div class="type">
+                            <h3>Teatre & Humour</h3>
+                        </div>
+                        <div class="title">
+                            <h1>Hassan El Fad "Who Is kabour"</h1>
+                        </div>
+                        <div class="timer">
+                            <span class="icon"><img src="./img/hourglass.svg" alt=""></span>
+                            <span class="num_time">00</span>
+                            <span class="letter_time">j</span>
+                            <span class="num_time">02</span>
+                            <span class="letter_time">h</span>
+                            <span class="num_time">31</span>
+                            <span class="letter_time">m</span>
+                            <span class="num_time">30</span>
+                            <span>s</span>
+                        </div>
+                        <div class="adresse">
+                            <span class="icon">
+                                <img src="./img/location1.svg" alt="">
+                            </span>
+                            <span class="bold">Casablanca,</span>
+                            <samp>Megarama</samp>
+                        </div>
+                    </div>
+
+                    <div class="buy flex-column">
+                        <div class="price">
+                            <div>
+                                A partir de :
+                            </div>
+                            <div class="price_num flex-row">
+                                <div class="num">200</div>
+                                <div class="currency">DH</div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a href="#">J'achete</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cart flex-row">
+                <div class="show_poster">
+                    <img src="./img/background_img_aita 2.png" alt="">
+                </div>
+                <div class="cart_deties flex-row">
+                    <div class="cart_info flex-column">
+                        <div class="type">
+                            <h3>Teatre & Humour</h3>
+                        </div>
+                        <div class="title">
+                            <h1>Hassan El Fad "Who Is kabour"</h1>
+                        </div>
+                        <div class="timer">
+                            <span class="icon"><img src="./img/hourglass.svg" alt=""></span>
+                            <span class="num_time">00</span>
+                            <span class="letter_time">j</span>
+                            <span class="num_time">02</span>
+                            <span class="letter_time">h</span>
+                            <span class="num_time">31</span>
+                            <span class="letter_time">m</span>
+                            <span class="num_time">30</span>
+                            <span>s</span>
+                        </div>
+                        <div class="adresse">
+                            <span class="icon">
+                                <img src="./img/location1.svg" alt="">
+                            </span>
+                            <span class="bold">Casablanca,</span>
+                            <samp>Megarama</samp>
+                        </div>
+                    </div>
+
+                    <div class="buy flex-column">
+                        <div class="price">
+                            <div>
+                                A partir de :
+                            </div>
+                            <div class="price_num flex-row">
+                                <div class="num">200</div>
+                                <div class="currency">DH</div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a href="#">J'achete</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cart flex-row">
+                <div class="show_poster">
+                    <img src="./img/background_img_aita 2.png" alt="">
+                </div>
+                <div class="cart_deties flex-row">
+                    <div class="cart_info flex-column">
+                        <div class="type">
+                            <h3>Teatre & Humour</h3>
+                        </div>
+                        <div class="title">
+                            <h1>Hassan El Fad "Who Is kabour"</h1>
+                        </div>
+                        <div class="timer">
+                            <span class="icon"><img src="./img/hourglass.svg" alt=""></span>
+                            <span class="num_time">00</span>
+                            <span class="letter_time">j</span>
+                            <span class="num_time">02</span>
+                            <span class="letter_time">h</span>
+                            <span class="num_time">31</span>
+                            <span class="letter_time">m</span>
+                            <span class="num_time">30</span>
+                            <span>s</span>
+                        </div>
+                        <div class="adresse">
+                            <span class="icon">
+                                <img src="./img/location1.svg" alt="">
+                            </span>
+                            <span class="bold">Casablanca,</span>
+                            <samp>Megarama</samp>
+                        </div>
+                    </div>
+
+                    <div class="buy flex-column">
+                        <div class="price">
+                            <div>
+                                A partir de :
+                            </div>
+                            <div class="price_num flex-row">
+                                <div class="num">200</div>
+                                <div class="currency">DH</div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a href="#">J'achete</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cart flex-row">
+                <div class="show_poster">
+                    <img src="./img/background_img_aita 2.png" alt="">
+                </div>
+                <div class="cart_deties flex-row">
+                    <div class="cart_info flex-column">
+                        <div class="type">
+                            <h3>Teatre & Humour</h3>
+                        </div>
+                        <div class="title">
+                            <h1>Hassan El Fad "Who Is kabour"</h1>
+                        </div>
+                        <div class="timer">
+                            <span class="icon"><img src="./img/hourglass.svg" alt=""></span>
+                            <span class="num_time">00</span>
+                            <span class="letter_time">j</span>
+                            <span class="num_time">02</span>
+                            <span class="letter_time">h</span>
+                            <span class="num_time">31</span>
+                            <span class="letter_time">m</span>
+                            <span class="num_time">30</span>
+                            <span>s</span>
+                        </div>
+                        <div class="adresse">
+                            <span class="icon">
+                                <img src="./img/location1.svg" alt="">
+                            </span>
+                            <span class="bold">Casablanca,</span>
+                            <samp>Megarama</samp>
+                        </div>
+                    </div>
+
+                    <div class="buy flex-column">
+                        <div class="price">
+                            <div>
+                                A partir de :
+                            </div>
+                            <div class="price_num flex-row">
+                                <div class="num">200</div>
+                                <div class="currency">DH</div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a href="#">J'achete</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cart flex-row">
+                <div class="show_poster">
+                    <img src="./img/background_img_aita 2.png" alt="">
+                </div>
+                <div class="cart_deties flex-row">
+                    <div class="cart_info flex-column">
+                        <div class="type">
+                            <h3>Teatre & Humour</h3>
+                        </div>
+                        <div class="title">
+                            <h1>Hassan El Fad "Who Is kabour"</h1>
+                        </div>
+                        <div class="timer">
+                            <span class="icon"><img src="./img/hourglass.svg" alt=""></span>
+                            <span class="num_time">00</span>
+                            <span class="letter_time">j</span>
+                            <span class="num_time">02</span>
+                            <span class="letter_time">h</span>
+                            <span class="num_time">31</span>
+                            <span class="letter_time">m</span>
+                            <span class="num_time">30</span>
+                            <span>s</span>
+                        </div>
+                        <div class="adresse">
+                            <span class="icon">
+                                <img src="./img/location1.svg" alt="">
+                            </span>
+                            <span class="bold">Casablanca,</span>
+                            <samp>Megarama</samp>
+                        </div>
+                    </div>
+
+                    <div class="buy flex-column">
+                        <div class="price">
+                            <div>
+                                A partir de :
+                            </div>
+                            <div class="price_num flex-row">
+                                <div class="num">200</div>
+                                <div class="currency">DH</div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a href="#">J'achete</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cart flex-row">
+                <div class="show_poster">
+                    <img src="./img/background_img_aita 2.png" alt="">
+                </div>
+                <div class="cart_deties flex-row">
+                    <div class="cart_info flex-column">
+                        <div class="type">
+                            <h3>Teatre & Humour</h3>
+                        </div>
+                        <div class="title">
+                            <h1>Hassan El Fad "Who Is kabour"</h1>
+                        </div>
+                        <div class="timer">
+                            <span class="icon"><img src="./img/hourglass.svg" alt=""></span>
+                            <span class="num_time">00</span>
+                            <span class="letter_time">j</span>
+                            <span class="num_time">02</span>
+                            <span class="letter_time">h</span>
+                            <span class="num_time">31</span>
+                            <span class="letter_time">m</span>
+                            <span class="num_time">30</span>
+                            <span>s</span>
+                        </div>
+                        <div class="adresse">
+                            <span class="icon">
+                                <img src="./img/location1.svg" alt="">
+                            </span>
+                            <span class="bold">Casablanca,</span>
+                            <samp>Megarama</samp>
+                        </div>
+                    </div>
+
+                    <div class="buy flex-column">
+                        <div class="price">
+                            <div>
+                                A partir de :
+                            </div>
+                            <div class="price_num flex-row">
+                                <div class="num">200</div>
+                                <div class="currency">DH</div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a href="#">J'achete</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="cart flex-row">
+                <div class="show_poster">
+                    <img src="./img/background_img_aita 2.png" alt="">
+                </div>
+                <div class="cart_deties flex-row">
+                    <div class="cart_info flex-column">
+                        <div class="type">
+                            <h3>Teatre & Humour</h3>
+                        </div>
+                        <div class="title">
+                            <h1>Hassan El Fad "Who Is kabour"</h1>
+                        </div>
+                        <div class="timer">
+                            <span class="icon"><img src="./img/hourglass.svg" alt=""></span>
+                            <span class="num_time">00</span>
+                            <span class="letter_time">j</span>
+                            <span class="num_time">02</span>
+                            <span class="letter_time">h</span>
+                            <span class="num_time">31</span>
+                            <span class="letter_time">m</span>
+                            <span class="num_time">30</span>
+                            <span>s</span>
+                        </div>
+                        <div class="adresse">
+                            <span class="icon">
+                                <img src="./img/location1.svg" alt="">
+                            </span>
+                            <span class="bold">Casablanca,</span>
+                            <samp>Megarama</samp>
+                        </div>
+                    </div>
+
+                    <div class="buy flex-column">
+                        <div class="price">
+                            <div>
+                                A partir de :
+                            </div>
+                            <div class="price_num flex-row">
+                                <div class="num">200</div>
+                                <div class="currency">DH</div>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <a href="#">J'achete</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_section flex-column">
+            <div class="footer_info_section flex-row">
+                <div class="first_part flex-column">
+                    <div id="mini_logo">
+                        <img src="./img/logo_footer.png" alt="Guichet Logo">
+                    </div>
+                    <div>
+                        <p>
+                            Un site de billetterie nouvelle génération vous offrant la possibilité
+                            d’acheter en ligne des tickets pour les événements de votre choix.
+                            Sa vocation est de vous proposer l’offre de concerts, sports,
+                            spectacles, cinéma, festivals, théâtre, humour, voyages et evasions
+                            la plus large du Maroc en collaboration avec les organisateurs
+                            d’événements.
+                        </p>
+                    </div>
+
+                    <h2>NOS APPLICATIONS</h2>
+
+                    <div class="apps flex-row">
+                        <a class="android app button flex-row" href="">
+                            <div class="icon">
+                                <img src="./img/logo_app.png" alt="app guichet logo">
+                            </div>
+                            <div>
+                                Guichet Android
+                            </div>
+                        </a>
+                        <a class="ios app button flex-row" href="">
+                            <div class="icon">
+                                <img src="./img/logo_app.png" alt="app guichet logo">
+                            </div>
+                            <div>
+                                Guichet IOS
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="countres_section flex-column">
+                        <div class="title">
+                            VOUS ETES A L’ETRANGER ?
+                        </div>
+
+                        <div class="country_input flex-row">
+                            <div id="flag">
+                                <img src="./img/mor1occo.png" alt="morocco flag">
+                            </div>
+
+                            <select name="countres" id="">
+                                <option value="">Maroc</option>
+
+                            </select>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="second_part flex-column">
+                    <div class="list_nav flex-row">
+                        <div class="list_nav_section">
+                            <h2>Guichet</h2>
+                            <div>
+                                <ul>
+                                    <li>Concerts & Festivals</li>
+                                    <li>Théâtre & Humour</li>
+                                    <li>Formations</li>
+                                    <li>Salons et congrès</li>
+                                    <li>Famille & Loisirs</li>
+                                    <li>Sport</li>
+                                    <li>Cinéma</li>
+                                    <li>Voyage</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="list_nav_section">
+                            <h2>Gstore</h2>
+                            <div>
+                                <ul>
+                                    <li>Coffrets Cadeaux</li>
+                                    <li>Bon plan</li>
+                                    <li>Sport</li>
+                                    <li>Gaming</li>
+                                    <li>High-Tech</li>
+                                    <li>Produits dérivées</li>
+                                    <li>Tendances et Déguisements</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="list_nav_section">
+                            <h2>à propos</h2>
+                            <div>
+                                <ul>
+                                    <li>Qui sommes nous ?</li>
+                                    <li>Contactez-nous</li>
+                                    <li>Guichet Magazine</li>
+                                    <li>Mentions légales</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="form flex-column">
+                        <div>
+                            Inscrivez-vous a la newsletter Guichet
+                        </div>
+                        <div>
+                            vous soyez alertes en amount des meilleurs plans, spectacles, concerts, festivals, etc
+                        </div>
+                        <div class="input flex-row">
+                            <div class="text_input">
+                                <input type="email" placeholder="Adresse Email">
+                            </div>
+                            <button>S'INSCRIRE</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="copyright_section flex-row">
+            <div>
+                Copyright 2024 © Guichet.ma - Tous droits réservés.
+            </div>
+
+            <div>
+                <a href="">
+                    <img src="./img/payment-logos.png" alt="">
+                </a>
+            </div>
+
+            <div class="flex-row">
+                <div>
+                    <a href="">
+                        <img src="./img/facebook.svg" alt="facebook">
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="./img/instagram.svg" alt="instagram">
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="./img/linkden.svg" alt="linkdin">
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="./img/twitter.svg" alt="twitter">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
