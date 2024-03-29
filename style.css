@@ -42,7 +42,7 @@ body {
 nav {
   justify-content: space-between;
   width: 100%;
-  
+
 }
 
 header {
@@ -157,8 +157,8 @@ header #slider_dotes {
   gap: 10px;
   align-items: center;
   min-width: 471px;
-  
-  
+
+
 }
 
 header #slider_dotes div {
@@ -196,7 +196,7 @@ main .menu_section .icon {
   border-radius: 5px;
 }
 
-main .menu_section #active_grid{
+main .menu_section #active_grid {
   background-color: #071A35;
 
 }
@@ -296,8 +296,6 @@ main section .cart .cart_deties .buy .price .price_num {
   color: #071A35;
 }
 
-
-
 main section .cart .cart_deties .buy .price .price_num .num {
   font-size: 1.7rem;
 
@@ -386,7 +384,7 @@ footer .footer_section .first_part .country_input {
   border-radius: 5px;
   align-items: center;
   padding: 0.5em 1em;
-  
+
 }
 
 footer .footer_section .first_part .country_input select {
@@ -429,7 +427,7 @@ footer .copyright_section {
   align-items: center;
   padding: 1rem 2rem;
   border-bottom: 6px solid transparent;
-  background: linear-gradient(to right, #fff, #fff), linear-gradient(to right,#6c9bc6, #ffc833 , #cc3633);
+  background: linear-gradient(to right, #fff, #fff), linear-gradient(to right, #6c9bc6, #ffc833, #cc3633);
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
 }
@@ -531,7 +529,7 @@ footer .second_part h2 {
   width: 80%;
 }
 
-.more_info div{
+.more_info div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -540,20 +538,20 @@ footer .second_part h2 {
   flex: 1;
 }
 
-.more_info div p{
+.more_info div p {
   width: 360px;
   text-align: center;
 }
 
-.more_info .icon{
+.more_info .icon {
   height: 60px;
 }
 
-#social_media{
+#social_media {
   gap: 1em;
 }
 
-main section .cart #not_available{
+main section .cart #not_available {
   padding: 0.6em 0.3em;
   width: 130px;
   display: flex;
@@ -562,10 +560,11 @@ main section .cart #not_available{
   background-color: #fff;
 }
 
-main section .cart #not_available a{
+main section .cart #not_available a {
   color: #071A35;
 }
-main section .cart .anulle{
+
+main section .cart .anulle {
   width: 110px;
   background-color: #FF6633;
   position: absolute;
